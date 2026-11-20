@@ -1,0 +1,141 @@
+.content-register {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: clamp(24px, 6vw, 96px);
+  background-color: #131417;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.018) 0px,
+    rgba(255, 255, 255, 0.018) 1px,
+    transparent 1px,
+    transparent 14px
+  );
+  color: #e5e7eb;
+  border-left: 6px solid #d97706;
+}
+
+.content-form-register {
+  width: 100%;
+  max-width: 420px;
+  background-color: #191b20;
+  border: 1px solid #2d313b;
+  border-radius: 6px;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.content-form-register h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: #f9fafb;
+}
+
+.content-form-register > p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #9ca3af;
+}
+
+.content-form-register hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #272b34;
+  margin: 6px 0 10px;
+}
+
+.content-form-register form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cont-input {
+  width: 100%;
+}
+
+.input-register,
+.input-login,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 4px;
+  border: 1px solid #343946;
+  background-color: #111317;
+  color: #f9fafb;
+  font-size: 0.94rem;
+}
+
+input::placeholder {
+  color: #6b7280;
+}
+
+input:focus {
+  outline: none;
+  border-color: #f59e0b;
+}
+
+.btn-register-submit,
+.btn-register,
+button[type="submit"] {
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px 14px;
+  border: 1px solid #d97706;
+  border-radius: 4px;
+  background-color: #d97706;
+  color: #111317;
+  font-size: 0.94rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-register-submit:hover,
+.btn-register:hover,
+button[type="submit"]:hover {
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+}
+
+.btn-back,
+.btn-login {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 4px;
+  border: 1px solid #343946;
+  background-color: transparent;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-back:hover,
+.btn-login:hover {
+  border-color: #6b7280;
+  color: #ffffff;
+  background-color: #21242c;
+}
+
+@media (max-width: 640px) {
+  .content-register {
+    justify-content: center;
+    padding: 20px;
+    border-left: none;
+    border-top: 4px solid #d97706;
+  }
+
+  .content-form-register {
+    padding: 22px 18px;
+  }
+}

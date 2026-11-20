@@ -1,0 +1,23 @@
+<div class="content-login">
+    <div class="content-form-login">
+        <h1>Iniciar Sesión</h1>
+
+        <p>para ingresar a nuestra plataforma <br> debes iniciar sesión</p>
+        <hr>
+        <form [formGroup]="formlogin" (ngSubmit)="iniciarSesion()">
+            <div class="cont-input">
+                <input formControlName="email" type="email" class="input-login" placeholder="Correo electrónico">
+
+            </div>
+            <div class="cont-input">
+                <input formControlName="pass" type="password" class="input-login" placeholder="Contraseña">
+            </div>
+            <button type="submit" class="btn-login">Iniciar Sesión</button>
+        </form>
+        <div class="login-failed" *ngIf="isLogin == false">
+            <p>Correo electrónico o contraseña incorrectos</p>
+        </div>
+        <p>no tienes cuenta?</p>
+        <button type="button" class="btn-register" (click)="irARegistro()">Registrate</button>
+    </div>
+</div>
